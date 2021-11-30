@@ -20,6 +20,10 @@
    --font-size-small:font-size: .813rem ;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 h1{
   font-family: 'Tangerine', cursive;
   font-weight: 700;
@@ -866,12 +870,14 @@ main {
   background-color:#D50000;
 }
 
-/* ===============       ABOUT US        ===================*/
+/* ===============       ABOUT US ==== HOME MENU       ===================*/
 
 
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
+    border: 2px solid red;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -979,7 +985,7 @@ h2 {
      
     }
     
-}
+} 
 
 /* =============================                 NEWS LETTER                ================================== */
 
@@ -1079,7 +1085,7 @@ form input[type=text]{
 
 }
 
-/* =================================                      FOOTER              =============================================== */
+/* =================================                      FOOTER        ======================================= */
 
 footer{
   background-color: var(--black);
@@ -1123,20 +1129,90 @@ footer{
 
  /* ===============              ABOUT - US STYLE STYLE SHEET       ========================  */
 
+ 
+/* ==============         Navigation FOR ABOUT-US PAGE        ====================*/
+.nav__list__count::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--deep-blue);
+    display: block;
+    margin: auto;
+    transition: 0.9s;
+}
+
+.nav__list__count:hover::after{
+    width: 70%;
+}
+
+.nav__list__count:hover, .nav__list__count:active,.nav__list__count:focus{
+    color: var(--deep-blue) !important;
+}
+
+.search__width{
+    width: 28%;
+    transition: .9s;
+}
+
+.search__width:focus{
+    width: 100%;
+    font-family: 'Lora', serif; 
+    border: 1px solid var(--deep-blue);
+}
+
+.logo, .footer__img{
+    width: 50%;
+    border-radius: 8px;
+    border: 2px solid var(--dirty-brown);
+}
+
+.about__us-btn{
+  background-color: var(--hover-blue);
+  border-bottom: 1px solid var(--black);
+  color: white;
+}
+
+
+
  .about-us__header{
    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/aboutus-header.jpg");
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   height: 10vh;
+   width: 100%;
  }
+
+ .about__us-dna-header{
+    font-size: 70px;
+    font-family: var(--font-family-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+
+  
  
 .section__mission{
     margin-top: 120px;
+    background-color: var(--white);
+}
+
+.section__mission h2{
+  color:var(--deep-blue);
+  font-family: var(--font-family-header);
+}
+
+.section__mission p{
+  color: var(--black);
+  font-family: var(--font-family-body);
 }
 
 .mission__img{
     margin-left: 10px;
     width: 100%;
+    border-radius: 8px;
 }
 
 .mission__box{
@@ -1151,8 +1227,8 @@ footer{
     background-color: white;
     float: right;
     color: black;
-    width: 50%;
-    height: 80vh;
+    width: 80%;
+    height: 50vh;
     margin-top: 200px;
     margin-right: 100px;
     display:flex;
@@ -1169,36 +1245,297 @@ footer{
 
 .strategy__box p{
     margin-top: 10px;
-    /* text-align: left; */
     text-align: justify;
-    width: 80vh;
+    width: 80%;
     height: 50vh;
     font-size: 25px;
+    font-family: var(--font-family-body);
 }
 
 .strategy__box h5{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
+    margin-top: 5px;
+    font-family: var(--font-family-header);
 }
 
-.footer__container{
-  padding: 10px 0px;
+.our-values{
+  color: var(--deep-blue);
 }
+
+.our-values__container{
+  margin-bottom: 50px;
+}
+
+
+
+  /* ==========         FOOTER   FOR ABOUT -US PAGE       =========== */
+
+.footer__container{
+    background:var(--black);
+    padding-top: 50px;
+    border-bottom: 1px solid grey;    
+}
+
+.footer__header{
+    font-weight: 800;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    font-family: var(--font-family-header);
+    font-size: var(--font-size-header);
+    color: var(--white);
+}
+
+footer li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: 400;
+    font-family: var(--font-family-body);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition: 1s;
+    font-family: var(--font-family-body);
+}
+
+.list__footer:hover{
+    color: #00328f;
+}
+
+
+.footer__follow--us{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.list-inline{
+    text-align: left;
+}
+
+.uil-facebook, .uil-twitter, .uil-linkedin, .uil-youtube, .uil-envelope, .uil-instagram-alt, .uil-clock, .uil-location-pin-alt, .uil-phone-alt, .uil-globe{
+    font-size: 25px;
+    margin-right: 5px;
+    color: #00328f;
+}
+
+.uil-facebook:hover{
+    color:#3b5998 
+}
+
+.uil-twitter:hover{
+    color: #00acee;
+}
+
+.uil-linkedin:hover{
+    color: #0077b5;
+}
+
+.uil-youtube:hover{
+    color: #c4302b;
+}
+
+.uil-instagram-alt:hover{
+    color: #bc2a8d;
+}
+
+
+.copyright__text{
+    font-family: var(--font-family-body);
+    text-align: center;
+}
+
+
+.footer__container{
+  padding: 20px 0px;
+  border-bottom: 1px solid white;
+
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px){
+  .nav__list__count{
+    font-size: 13px;
+    margin: 0px 10px;
+    padding: 0px 40px;
+  }
+
+  .nav__list__count:last-child{
+    margin-right: 10px;
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  .about__us-btn{
+    font-size: 12px;
+  }
+  .navbar-collapse{
+    
+    width: 300%;
+  }
+
+  .search__width{
+    width: 35%;
+  }
+
+  .strategy__box p{
+    width: 80vh;
+    height: 20vh;
+    font-size: 20px;
+    
+}
+
+  .strategy__box{
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 8px;
+    width: 53%;
+    height: 60vh;
+    margin-top: 100px;
+    display:flex;
+    justify-content:left;
+}
+  .about__us-dna-header{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 407px){
+  .logo{
+    width: 30%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    min-height: 10%;
+  }
+
+  .navbar-toggler{
+     margin-left: 250px; 
+     font-size: 10px;
+  }
+
+}
+
+
+@media only screen and (max-width: 407px) and (min-width: 332px){
+  .navbar-toggler{
+    font-size: 10px; 
+    margin-left: 300px; 
+  }
+
+}
+
+@media only screen and (max-width: 991px){
+  .about__us-dna-header{
+    font-size: 40px;
+  }
+
+  .about-us__header{
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width:764px){
+  .search__width{
+    width: 100%;
+  }
+
+  .nav__list__count:hover::after{
+    width: 5%;
+    transition: 1s;
+}
+
+  .strategy__box{
+    width: 80%;
+    height: 43vh;
+}
+
+
+.strategy__box p{
+    font-size: 20px;
+}
+
+}
+
+@media only screen and (max-width: 764px){
+  .search__width{
+    width: 100%;
+  }
+
+  .nav__list__count:hover::after{
+    width: 5%;
+    transition: 1s;
+}
+
+  .strategy__box{
+    width: 80%;
+    height: 95vh;
+    margin-top: 0px;
+    margin-right: 60px;
+    border-radius: 8px;
+}
+
+
+.strategy__box p{
+    margin-top: 10px;
+    text-align: justify;
+    width: 80%;
+    height: 50vh;
+    font-size: 15px;
+    font-family: var(--font-family-body);
+}
+
+.strategy__box h5{
+    font-size: 35px;
+}
+
+}
+
+
+@media only screen and (max-width: 511px) and (min-width:320px){
+  .mission__img{
+    margin-left: 10px;
+    height: 100%;
+}
+
+  .section__mission{
+    width: 100%;
+  }
+
+  .section__mission p{
+  font-size: 10px;
+}
+
+  .section__mission h2{
+  font-size: 20px;
+}
+}
+
+
+
 
 
 
 /*================            CONTACT-FORM        ==================== */
 
 .contact__us-header{
-  font-size: 70px;
+  font-size: 60px;
   margin: 5px 0px;
   color: white;
+  font-family: var(--font-size-header);
 }
 
 .contact__us-paragraph{
   font-size: 20px;
   font-weight: light;
   margin: 5px 0px 30px 0px;
+  font-family: var(--font-family-body);
   color:black;
 }
 .contact__us-bg{
@@ -1217,7 +1554,7 @@ footer{
 
 .contact__us-bg h2{
   margin: 50px 0px;
-  font-size: 70px;
+  font-size: 50px;
   color: var(--white);
   font-family: var(--font-size-header);
 }
@@ -1258,10 +1595,11 @@ input[type=submit] {
   font-family: var(--font-family-header);
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, .about__us-btn:hover {
   border-bottom: 1px solid var(--white);
   border-top: 1px solid var(--white);
   background-color: var(--deep-blue);
+  color: var(--white);
 }
 
 /* Style the container/contact section */
