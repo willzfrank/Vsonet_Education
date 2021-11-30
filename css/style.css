@@ -28,14 +28,13 @@ h1{
 h2,h3,h4,h5{
   font-family: var(--font-family-header);
   font-weight: bold;
-  font-size: 23px;
 }
 body {
   font-family: var(--font-family-body);
   background-color: #fff;
   height: 200vh;
   position: relative;
-  font-size: var(--font-size-normal);
+
 }
 
 body:before {
@@ -1121,3 +1120,250 @@ footer{
    color: #bc2a8d;
    transition:all 1s;
  }
+
+ /* ===============              ABOUT - US STYLE STYLE SHEET       ========================  */
+
+ .about-us__header{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../images/aboutus-header.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ 
+.section__mission{
+    margin-top: 120px;
+}
+
+.mission__img{
+    margin-left: 10px;
+    width: 100%;
+}
+
+.mission__box{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.strategy__box{
+    border: 2px solid white;
+    background-color: white;
+    float: right;
+    color: black;
+    width: 50%;
+    height: 80vh;
+    margin-top: 200px;
+    margin-right: 100px;
+    display:flex;
+    justify-content:center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-img-overlay{
+    overflow: auto;
+}
+
+.strategy__box p{
+    margin-top: 10px;
+    /* text-align: left; */
+    text-align: justify;
+    width: 80vh;
+    height: 50vh;
+    font-size: 25px;
+}
+
+.strategy__box h5{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.footer__container{
+  padding: 10px 0px;
+}
+
+
+
+/*================            CONTACT-FORM        ==================== */
+
+.contact__us-header{
+  font-size: 70px;
+  margin: 5px 0px;
+  color: white;
+}
+
+.contact__us-paragraph{
+  font-size: 20px;
+  font-weight: light;
+  margin: 5px 0px 30px 0px;
+  color:black;
+}
+.contact__us-bg{
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("https://images.unsplash.com/photo-1503324010925-71cfe52dad2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+      height: 83vh;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      background-position: right;
+      
+}
+
+.contact__us-bg h2{
+  margin: 50px 0px;
+  font-size: 70px;
+  color: var(--white);
+  font-family: var(--font-size-header);
+}
+
+.contact__us-bg li{
+  list-style: none;
+  font-size: 20px;
+  margin:20px 0px;
+  font-family: var(--font-family-body);
+}
+
+/* Style inputs */
+input[type=text], input[type=email],input[type=tel],select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: var(--font-family-body);
+  font-size: 20px;
+}
+
+input[type=submit] {
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid var(--white);
+  border-radius: 8px;
+  background-color: var(--hover-blue);
+}
+
+.label{
+  font-size: 22px;
+  color:var(--white);
+  font-family: var(--font-family-header);
+}
+
+input[type=submit]:hover {
+  border-bottom: 1px solid var(--white);
+  border-top: 1px solid var(--white);
+  background-color: var(--deep-blue);
+}
+
+/* Style the container/contact section */
+.contact__us-container {
+  border-radius: 5px;
+  background-color:var(--black);
+  padding: 10px;
+  height: 120vh;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.contact__us-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 1082px) {
+    .contact__us-container{
+      height: 70%;
+    }
+
+    .label{
+      font-size: 20px;
+    }
+
+    input[type=text], input[type=email],input[type=tel],select, textarea {
+      width: 90%;
+      font-size: 15px;
+    }
+
+    .contact__us-bg h2{
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .contact__us-bg{
+      margin-bottom: 30px;
+      height: 106vh;
+      border-radius: 8px;
+}
+
+    .contact__us-header{
+      font-size: 50px;
+    }
+
+    
+}
+
+@media screen and (max-width: 598px) {
+    .contact__us-container {
+      border-radius: 0px;
+      background-color:var(--white);
+      padding: 10px 0px;
+      height: 135vh;
+    }
+
+    .label{
+      font-size: 22px;
+      color:var(--black);
+    }
+
+    input[type=submit] {
+      width: 91%;
+    }
+
+    input[type=text], input[type=email],input[type=tel],select, textarea {
+      width: 90%;
+      font-size: 15px;
+    }
+
+    .contact__us-bg h2{
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .contact__us-bg{
+      margin-bottom: 30px;
+      height: 106vh;
+      border-radius: 8px;
+}
+
+    .contact__us-header{
+      font-size: 50px;
+    }
+
+    
+}
+
