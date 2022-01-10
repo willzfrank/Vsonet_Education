@@ -1,105 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About-US</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@400;600&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
+
+    <!-- FAV ICONS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io/apple-touch-icon.png"
     />
-    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+
+    <!-- ANIMATION CSS -->
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Overpass:wght@300;600&family=Raleway:ital,wght@1,500&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- SWIPER CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.theme.min.css"
-    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <title>Vsonet Education</title>
   </head>
+
   <body>
-    <header class="container about-us__header">
-      <!--=======================           NAVIGATION BAR           ===========================-->
-      <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
-        <div class="container">
-          <a href="index.html" class="navbar-brand">
-            <img class="logo" src="images/logo.png" alt="VSONET EDUCATION" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- MOBILE NAVIGATION NOT WORKING -->
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link nav__list__count">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link nav__list__count">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a href="courses.html" class="nav-link nav__list__count"
-                  >Courses</a
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- .site-mobile-menu -->
+
+    <div class="site-navbar-wrap">
+      <div class="site-navbar-top">
+        <div class="container py-3">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d-flex mr-auto nav__contact">
+                <a
+                  href="mailto:info@vsonetedu.com"
+                  class="d-flex align-items-center mr-4"
                 >
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link nav__list__count">Training</a>
-              </li>
-              <li class="nav-item">
-                <a href="e-class.html" class="nav-link nav__list__count">
-                  E-class</a
+                  <span class="icon-envelope mr-2"></span>
+                  <span class="d-none d-md-inline-block"
+                    >info@vsonetedu.com</span
+                  >
+                </a>
+                <a
+                  href="tel:+234 818 000 9100"
+                  class="d-flex align-items-center mr-auto"
                 >
-              </li>
-              <li class="nav-item">
-                <a href="contact-us.html" class="nav-link nav__list__count"
-                  >Contact Us</a
+                  <span class="icon-phone mr-2"></span>
+                  <span class="d-none d-md-inline-block"
+                    >+234 818 000 9100</span
+                  >
+                </a>
+              </div>
+            </div>
+            <div class="col-6 text-right">
+              <div class="mr-auto">
+                <a
+                  href="https://twitter.com/vsonetedu"
+                  target="_blank"
+                  class="p-2 pl-0"
+                  ><span class="icon-twitter"></span
+                ></a>
+                <a
+                  href="https://web.facebook.com/vsonetedu/"
+                  target="_blank"
+                  class="p-2 pl-0"
+                  ><span class="icon-facebook"></span
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/vsonetedu/"
+                  target="_blank"
+                  class="p-2 pl-0"
+                  ><span class="icon-linkedin"></span
+                ></a>
+                <a
+                  href="https://www.instagram.com/vsonetedu/"
+                  target="_blank"
+                  class="p-2 pl-0"
                 >
-              </li>
-            </ul>
-            <form action="" class="d-flex">
-              <input
-                type="search"
-                class="form-control me-2 search__width"
-                placeholder="Search..."
-                aria-label="Search"
-              />
-              <button class="btn about__us-btn" type="submit">Search</button>
-            </form>
+                  <span class="icon-instagram"></span
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
 
-      <h1 class="about__us-dna-header">Passionate to share knowledge</h1>
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <h1 class="my-0 site-logo">
+                <a href="#"
+                  ><img
+                    src="images/logo.png"
+                    alt="Vsonet Education"
+                    class="hero__img"
+                /></a>
+              </h1>
+            </div>
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3">
+                    <a
+                      href="#"
+                      class="site-menu-toggle js-menu-toggle text-white"
+                      ><span class="icon-menu h3"></span
+                    ></a>
+                  </div>
+
+                  <ul
+                    class="site-menu main-menu js-clone-nav d-none d-lg-block list__box"
+                  >
+                    <li class="active">
+                      <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                      <a href="about-us.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="has-children">
+                      <a href="#" class="nav-link">Courses</a>
+                      <ul class="dropdown arrow-top">
+                        <li>
+                          <a href="diploma.html" class="nav-link"
+                            >Diploma /Degree Programs</a
+                          >
+                        </li>
+                        <li>
+                          <a href="professional.html" class="nav-link"
+                            >Professional Training</a
+                          >
+                        </li>
+                        <li>
+                          <a href="courses-for-children.html" class="nav-link"
+                            >Tech Courses for Children</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#about-section" class="nav-link">Training</a>
+                    </li>
+                    <li>
+                      <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                    <li class="mobile__search"></li>
+
+                    <li class="desktop__search">
+                      <button id="open-modal" class="btn search__nav-btn">
+                        <i class="uil uil-search"></i> Search
+                      </button>
+
+                      <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div
+                          id="modal-content"
+                          class="modal-content animation-1"
+                        >
+                          <!-- Modal header -->
+                          <div class="modal-header">
+                            <h5 class="modal-header-title">
+                              So what you looking for?
+                              <i class="uil uil-smile-wink-alt"></i>
+                            </h5>
+                            <button id="close" class="modal-header-icon">
+                              <span class="icon">
+                                <i class="uil uil-times"></i>
+                              </span>
+                            </button>
+                          </div>
+                          <!-- Modal body -->
+                          <div class="modal-body">
+                            <form action="" class="d-flex">
+                              <input
+                                type="search"
+                                class="form-control me-2 search__width"
+                                placeholder="Search..."
+                                aria-label="Search"
+                              />
+                              <button
+                                class="btn btn-outline-success"
+                                type="submit"
+                              >
+                                <i class="uil uil-search"></i>
+                              </button>
+                            </form>
+                          </div>
+
+                          <!-- Modal footer -->
+                          <div class="modal-footer"></div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================            HEADER          ========================-->
+
+    <div class="svg-container">
+      <svg viewbox="0 0 800 400" class="svg">
+        <path
+          id="curve"
+          fill="#375E97"
+          bac
+          d="M 800 300 Q 400 350 0 300 L 0 0 L 800 0 L 800 300 Z"
+        ></path>
+      </svg>
+    </div>
+
+    <header class="header">
+      <h1 class="header__text-about-us">Passionate to share knowledge</h1>
     </header>
 
     <section class="container section__mission text-center">
@@ -230,172 +402,134 @@
     </section>
 
     <!-- =======================            FOOTER            =========================== -->
-    <footer>
-      <div class="footer__container">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
-              <div style="width: 18rem">
-                <img
-                  class="footer__img"
-                  src="images/logo.png"
-                  alt="Vsonet Education Logo"
+    <footer class="bg-white">
+      <div class="container py-5">
+        <div class="row py-4">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <img src="images/logo.png" alt="" width="180" class="mb-3" />
+            <p class="font-italic text-muted">
+              We are a unique institute in the world of Tech Education. Our
+              intense and personified approach to teaching, training and
+              coaching our students sets us apart. We record success when our
+              students succeed from the beginning, the conclusion and after the
+              training.
+            </p>
+            <div class="wrapper">
+              <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <a
+                  href="https://www.facebook.com/vsonetedu/?_rdc=1&_rdr"
+                  target="_blank"
+                  class="footer__anchor"
+                  ><i class="uil uil-facebook-f"></i
+                ></a>
+              </div>
+              <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <a href=""><i class="uil uil-twitter"></i></a>
+              </div>
+              <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="uil uil-instagram-alt"></i></span>
+              </div>
+              <div class="icon github">
+                <div class="tooltip">Linkedin</div>
+                <span><i class="uil uil-linkedin"></i></span>
+              </div>
+              <div class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="uil uil-youtube"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Affiliate Area</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Careers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Enrol Now</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Events</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Refer and Earn</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">
+              Terms & Conditions
+            </h6>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Privacy Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link">Refund Policy</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-muted footer__link"
+                  >Reschedule Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-lg-0">
+            <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+            <p class="text-muted mb-4">
+              Subscribe to keep up with fresh news and exciting updates.
+            </p>
+            <div class="p-1 rounded border">
+              <div class="input-group">
+                <input
+                  type="email"
+                  placeholder="Enter your email address"
+                  aria-describedby="button-addon1"
+                  class="form-control border-0 shadow-0"
                 />
-                <p class="card-text services__text my-4">
-                  We are a unique institute in the world of Tech Education. Our
-                  intense and personified approach to teaching, training and
-                  coaching our students sets us apart. We record success when
-                  our students succeed from the beginning, the conclusion and
-                  after the training.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
-              <div style="width: 18rem">
-                <h5 class="card-title footer__header">USEFUL LINKS</h5>
-                <ul>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer"
-                      >Affliliate area</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Careers</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Courses</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Enrol now</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer"> Events</a>
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Refer and Earn</a
-                    >
-                  </li>
-                  <!-- <li><a href="#" target="_blank"> <img src="images/google_play.png" alt="Get it on google play" style="width: 50%;"></a> </li>  -->
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
-              <div style="width: 18rem">
-                <h5 class="card-title footer__header">TERMS & CONDITIONS</h5>
-                <ul>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Terms & Conditions</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Privacy Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Refund Policy</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" target="_blank" class="list__footer">
-                      Reschedule Policy</a
-                    >
-                  </li>
-                </ul>
-                <ul class="list-inline">
-                  <li class="footer__header footer__follow--us">Follow Us</li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://web.facebook.com/vsonetedu/"
-                      target="_blank"
-                      class="list__footer"
-                      ><i class="uil uil-facebook"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://twitter.com/vsonetedu"
-                      target="_blank"
-                      class="list__footer"
-                      ><i class="uil uil-twitter"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://www.linkedin.com/company/vsonetedu/"
-                      target="_blank"
-                      class="list__footer"
-                      ><i class="uil uil-linkedin"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://www.youtube.com/channel/UC0Vrqsis9bjLhGsnE_K9egQ"
-                      target="_blank"
-                      class="list__footer"
-                      ><i class="uil uil-youtube"></i
-                    ></a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a
-                      href="https://www.instagram.com/vsonetedu/"
-                      target="_blank"
-                      class="list__footer"
-                      ><i class="uil uil-instagram-alt"></i
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-sm-3 d-flex justify-content-center">
-              <div style="width: 18rem">
-                <h5 class="card-title footer__header">CONTACT US</h5>
-                <ul>
-                  <li><i class="uil uil-clock"></i>Weekdays: 8am - 4:30pm</li>
-                  <li><i class="uil uil-clock"></i>Saturday: 9am - 2:00pm</li>
-                  <li><i class="uil uil-clock"></i>Sunday: Closed</li>
-                  <li>
-                    <i class="uil uil-location-pin-alt"></i>34, Adegbola Street
-                    Off Awolowo Way, Ikeja, Lagos, Nigeria
-                  </li>
-                  <li style="font-size: 17px">
-                    <i class="uil uil-phone-alt"></i>Phone: +234 818 000 9100
-                  </li>
-                  <li><i class="uil uil-envelope"></i>info@vsonetedu.com</li>
-                </ul>
+                <div class="input-group-append">
+                  <button id="button-addon1" type="submit" class="btn btn-link">
+                    <i class="uil uil-message footer__message"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <p class="copyright__text">
-        <span style="font-size: 25px">&copy;</span>
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
-        <span style="color: #6e6625">V</span
-        ><span style="color: #204180">SONET</span>
-        <span style="color: #6e6625">education.</span> All Rights Reserved
-      </p>
+
+      <!-- Copyrights -->
+      <div class="bg-light py-4">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Vsonet Education All rights reserved. |Designed by WillzFrank|
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js"></script>
-    <script src="Js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.32/owl.carousel.min.js"></script>
-    <script src="Js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   </body>
 </html>

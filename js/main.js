@@ -144,3 +144,15 @@ window.onclick = function (event) {
     ticking = true;
   });
 })();
+
+// media queries
+if (window.matchMedia("(min-width: 600px)").matches) {
+  /* La largeur minimum de l'affichage est 600 px inclus */
+
+  var node = document.createElement("li"); // Create a <li> node
+  var textnode = document.createTextNode("Water"); // Create a text node
+  node.appendChild(textnode); // Append the text to <li>
+  document.getElementById("myList").appendChild(node); // Append <li> to <ul> with id="myList
+} else {
+  /* L'affichage est inférieur à 600px de large */
+}

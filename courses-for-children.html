@@ -168,7 +168,7 @@
                   <ul
                     class="site-menu main-menu js-clone-nav d-none d-lg-block list__box"
                   >
-                    <li>
+                    <li class="active">
                       <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li>
@@ -183,24 +183,59 @@
                           >
                         </li>
                         <li>
-                          <a href="professional.html" class="nav-link"
-                            >Professional Training</a
-                          >
+                          <a href="professional.html" class="nav-link">Professional Training</a>
                         </li>
                         <li>
                           <a href="courses-for-children.html" class="nav-link"
                             >Tech Courses for Children</a
                           >
                         </li>
+                        <!-- <!-- <!-- <li class="has-children">
+                          <a href="#">More Links</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                          </ul>
+                        </li>
+
+                        <li class="has-children">
+                          <a href="#">More Links</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                          </ul>
+                        </li> 
+
+                        <li class="has-children">
+                          <a href="#">More Links</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                          </ul>
+                        </li> -->
                       </ul>
                     </li>
                     <li>
                       <a href="#about-section" class="nav-link">Training</a>
                     </li>
-                    <li class="active">
+                    <li>
                       <a href="contact-us.html" class="nav-link">Contact Us</a>
                     </li>
-                    <li class="mobile__search"></li>
+                    <li class="mobile__search">
+                      <!-- for mobile devices
+                            <form action="" class="d-flex">
+                              <input
+                                type="search"
+                                class="form-control me-2 search__width"
+                                placeholder="Search..."
+                                aria-label="Search"
+                              />
+                              <button class="btn about__us-btn" type="submit">Search</button>
+                            </form> -->
+                    </li>
 
                     <li class="desktop__search">
                       <button id="open-modal" class="btn search__nav-btn">
@@ -271,105 +306,48 @@
     </div>
 
     <header class="header">
-      <h1 class="header__text--contactus">Have enquiries for us?</h1>
+      <h1 class="header__text">LET'S HELP ON YOUR LEARNING JOURNEY</h1>
       <h3 class="header__paragraph">
-        Get in touch with our expert support team by filling the form below.
+        From single courses to large enterprise solutions, overcome skills gaps,
+        and accomplish individual and organization objectives.
       </h3>
+      <a href="#courses" class="header__btn btn">ENROLL NOW</a>
     </header>
 
+    <!-- =================      OUR SERVICES     =================== -->
     <main>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-            <h2 class="form-title">Get in Touch</h2>
-          </div>
+      <h2 class="m-5 text-center" id="courses">
+        Tech Courses for Children
+      </h2>
+
+      <div class="container services__container">
+        <div class="main-box">
+          <div class="box box-grey services__box-diploma">
+                <div class="icon">
+                  <img
+                    src="images/L3DC.jpg"
+                    class="card-img-top"
+                    alt="Digi"
+                  />
+                </div>
+                <h2>Digi</h2>
+                <hr class="services__line" />
+                <p>
+                    Digi recognises the importance of strong digital skills and
+                provides a core understanding of computer science in the 21st
+                century. The course has been designed to meet the needs of UK
+                and international students aged 5 to 16. </p>
+                </p>
+                <a href="#">
+                  Read More <i class="uil uil-arrow-circle-right"></i>
+                </a>
+              </div>    
+          
         </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <form
-              id="contact-form"
-              name="myForm"
-              class="form"
-              action="#"
-              onsubmit="return validateForm()"
-              method="POST"
-              role="form"
-            >
-              <div class="form-group">
-                <label class="form-label" id="nameLabel" for="name"></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  name="name"
-                  placeholder="Your name"
-                  tabindex="1"
-                />
-              </div>
-
-              <div class="form-group">
-                <label class="form-label" id="emailLabel" for="email"></label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="Your Email"
-                  tabindex="2"
-                />
-              </div>
-
-              <div class="form-group">
-                <label
-                  class="form-label"
-                  id="subjectLabel"
-                  for="sublect"
-                ></label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="subject"
-                  name="subject"
-                  placeholder="Subject"
-                  tabindex="3"
-                />
-              </div>
-
-              <div class="form-group">
-                <label
-                  class="form-label"
-                  id="messageLabel"
-                  for="message"
-                ></label>
-                <textarea
-                  rows="6"
-                  cols="60"
-                  name="message"
-                  class="form-control"
-                  id="message"
-                  placeholder="Your message"
-                  tabindex="4"
-                ></textarea>
-              </div>
-
-              <div class="text-center margin-top-25">
-                <button
-                  type="submit"
-                  class="btn btn-mod btn-border btn-large contact__form-btn"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-            <!-- End form -->
-          </div>
-          <!-- End col -->
-        </div>
-        <!-- End row -->
       </div>
-      <!-- End container -->
     </main>
+    <!--======================                  FOOTER                 ============================= -->
+
     <footer class="bg-white">
       <div class="container py-5">
         <div class="row py-4">
@@ -400,10 +378,10 @@
                 <div class="tooltip">Instagram</div>
                 <span><i class="uil uil-instagram-alt"></i></span>
               </div>
-              <!-- <div class="icon github">
+              <div class="icon github">
                 <div class="tooltip">Linkedin</div>
                 <span><i class="uil uil-linkedin"></i></span>
-              </div> -->
+              </div>
               <div class="icon youtube">
                 <div class="tooltip">Youtube</div>
                 <span><i class="uil uil-youtube"></i></span>
@@ -492,6 +470,21 @@
       </div>
     </footer>
 
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".header", { delay: 500, origin: "top" });
+      ScrollReveal().reveal(".services__box-diploma, .about__us__box, .wrapper", {
+        delay: 500,
+        origin: "bottom",
+        interval: 200,
+      });
+    </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
