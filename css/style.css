@@ -716,6 +716,13 @@ a:hover {
   font-family: var(--font-size-header);
 }
 
+.header__text-about-us {
+  font-size: 55px;
+  margin-top: 100px;
+  text-align: center;
+  font-family: var(--font-size-header);
+}
+
 .header__paragraph {
   color: var(--white);
   font-family: var(--font-family-body);
@@ -806,14 +813,16 @@ main::after {
 
 @media screen and (max-width: 1199px) and (min-width: 1155px) {
   .header__text,
-  .header__text--contactus {
+  .header__text--contactus,
+  .header__text-about-us {
     font-size: 50px;
   }
 }
 
 @media screen and (max-width: 1164px) and (min-width: 1057px) {
   .header__text,
-  .header__text--contactus {
+  .header__text--contactus,
+  .header__text-about-us {
     font-size: 45px;
   }
 
@@ -824,7 +833,8 @@ main::after {
 
 @media screen and (max-width: 1052px) and (min-width: 992px) {
   .header__text,
-  .header__text--contactus {
+  .header__text--contactus,
+  .header__text-about-us {
     font-size: 40px;
   }
 
@@ -834,7 +844,8 @@ main::after {
 }
 
 @media screen and (max-width: 991px) and (min-width: 766px) {
-  .header__text {
+  .header__text,
+  .header__text-about-us {
     font-size: 35px;
     margin: 50px 0px 30px 0px;
   }
@@ -865,7 +876,8 @@ main::after {
 
 @media screen and (max-width: 625px) and (min-width: 450px) {
   .header__text,
-  .header__text--contactus {
+  .header__text--contactus,
+  .header__text-about-us {
     font-size: 15px;
     margin: 55px 0px 10px 0px;
   }
@@ -1059,6 +1071,15 @@ main::after {
 @media screen and (max-width: 449px) and (min-width: 320px) {
   .header__text {
     font-size: 11.3px;
+    word-break: break-all;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0px 5px 0px;
+    margin-right: 10px;
+  }
+
+  .header__text-about-us {
+    font-size: 15px;
     word-break: break-all;
     text-align: center;
     font-weight: bold;
@@ -1472,6 +1493,10 @@ h2 {
   margin-top: 0px;
 }
 
+.section__mission--box {
+  margin-bottom: 50px;
+}
+
 .section__mission h2 {
   color: var(--deep-blue);
   font-family: var(--font-family-header);
@@ -1529,15 +1554,21 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   margin-top: 5px;
-  font-family: var(--font-family-header);
+  font-family: var(--font-family-header) !important;
+  color: var(--deep-blue);
 }
 
 .our-values {
   color: var(--deep-blue);
+  font-family: var(--font-family-header);
 }
 
 .our-values__container {
   margin-bottom: 50px;
+}
+
+.our-values__container col-sm h3 {
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -1677,7 +1708,7 @@ h2 {
 @media only screen and (max-width: 511px) and (min-width: 320px) {
   .mission__img {
     margin-left: 10px;
-    height: 100%;
+    height: 90%;
   }
 
   .section__mission {
@@ -1685,11 +1716,12 @@ h2 {
   }
 
   .section__mission p {
-    font-size: 10px;
+    font-size: 16px;
   }
 
-  .section__mission h2 {
-    font-size: 20px;
+  .section__mission h2,
+  .our-values {
+    font-size: 25px;
   }
 }
 
